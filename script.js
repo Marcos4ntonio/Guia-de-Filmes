@@ -9,7 +9,7 @@ let movieList = JSON.parse(localStorage.getItem("movieList"))?? [];
 
 async function searchButtonClickHandler(){
     try {
-        let url = `http://www.omdbapi.com/?apikey=${key}&t=${movieNameParemeterGenerator()}${movieYaerParemeterGenerator()}`;
+        let url = `https://www.omdbapi.com/?apikey=${key}&t=${movieNameParemeterGenerator()}${movieYaerParemeterGenerator()}`;
         const response = await fetch(url);
         const data = await response.json();
         console.log('data: ',data);
