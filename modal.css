@@ -6,6 +6,12 @@
     --light-secondary: #b07e64;
 }
 
+@media (max-width:600px){
+    :root {
+        font-size: 10px;
+    }
+}
+
 #modal-overlay {
     display: flex;
     position:fixed;
